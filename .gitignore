@@ -2,3 +2,7 @@
 /panel/dist
 
 /dist
+
+# test coverage output
+/.nyc_output
+/coverage
