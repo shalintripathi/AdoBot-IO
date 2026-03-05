@@ -6,7 +6,8 @@
   "scripts": {
     "postinstall": "node_modules/.bin/sequelize db:migrate; ./node_modules/.bin/gulp",
     "start": "node index.js",
-    "dev": "gulp && npm start"
+    "dev": "gulp && npm start",
+    "test": "mocha 'test/**/*.test.js' --exit"
   },
   "repository": {
     "type": "git",
@@ -43,8 +44,12 @@
     "socket.io": "^1.7.2"
   },
   "devDependencies": {
+    "chai": "^4.5.0",
     "gulp-jshint": "^2.1.0",
     "gulp-watch": "^4.3.11",
-    "jshint": "^2.9.6"
+    "jshint": "^2.9.6",
+    "mocha": "^10.8.2",
+    "sinon": "^15.2.0",
+    "supertest": "^6.3.4"
   }
 }
